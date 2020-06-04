@@ -3,79 +3,80 @@
 
 <head>
   <meta charset="utf-8">
-  <title>My Portfolio</title>
+  <title>My Personal Website</title>
   <link rel="stylesheet" href="style.css">
   <meta name="description" content="An awesome site that showcases my work!">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
-        <p>My Portfolio</p>
+        <a href="index.html" class="header-brand">YN</a>
         <nav>
           <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/biography">Biography</a>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav></header>
+        </nav>
+    </header>
     <main>
-        <section>
-            <h1>Hi, I'm Yoko.</h1>
-            <p>A 3rd-Year in College Studying Piano and Data Science.</p>
-            <img src="http://via.placeholder.com/800x400" alt="Placeholder image">
+        <section class="index-banner">
+            <div class="vertical-center">
+                <h1>Hi, I'm Yoko. </h1>
+                <h2>A college student located in Ann Arbor, MI. Studying Data Science and Piano Performance.</h2>
+            </div>
         </section>
-        <section>
-          <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                <article>
-                    <header>
-                    <h3>My Portfolio</h3>
-                    </header>
-                    <p>
-                    I began developing my own personal website using HTML, CSS, and Javascript on March 4, 2020. 
-                    This is my first personal CS project. 
-                    </p>
-                    <footer>
-                        <p>
-                            <a href="/tuxedo-cats-always-looking-dapper">See More</a>
-                        </p>
-                    </footer>
-                </article>
-                </li>
-            </ul>
-        </main>
+        <div class="wrapper">
+            <section class="index-boxlinks"> 
+                <a href="#profile">
+                    <div class="index-boxlink-square">
+                        <h3>Profile</h3>
+                    </div>
+                </a>
+                <a href="#experience">
+                    <div class="index-boxlink-rectangle">
+                        <h3>Experience</h3>
+                    </div>
+                </a>
+                <a href="#contact">
+                    <div class="index-boxlink-square">
+                        <h3>Contact</h3>
+                    </div>
+                </a>
+            </section>
+        </div>
+       
+        <section id="profile" class="profile">
+            <h1>Profile</h1>
+            <h2>Hi, my name is Yoko Nagafuchi. I am a fourth-year student at the University of Michigan, Ann Arbor, studying Data Science and Piano Performance. </h2>
+        </section>
+        <section id="experience" class="experience">
+            <h1>Experience</h1>
+            <h2>Please find my résumé <a href="GH_Resume.pdf">here</a>.</h2>
+        </section>
+        <section id="contact" class="contact">
+            <h1>Contact</h1>
+            <h2>Email: yokon[at]umich[dot]edu</h2>
+        </section>
+    </main>
+    <div class="wrapper">
     <footer>
-        <section>
-            <section id="contact">
-            <h4>Contact</h4>
-            <dl>
-                <dt>
-                    <p>
-                    Email: <a href="mailto:yourEmailHere@example.com">yourEmailHere@example.com</a>
-                    </p>
-                </dt>
-                <dt>
-                    <p>
-                    Phone: 
-                    </p>
-                </dt>
-            </dl>
-        <p>&copy; 2020 - Yoko Nagafuchi - All rights reserved</p>
+        <ul class="footer-links-main">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-sm">
+            <a href="https://github.com/yyokonn">
+                <img src="GitHub.png" alt="GitHub logo">
+            </a>
+        </div>
     </footer>
+    </div>
 </body>
 
 </html>
