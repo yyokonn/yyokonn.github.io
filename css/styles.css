@@ -9968,6 +9968,11 @@ h3 {
     min-width: 992px !important;
   }
 
+  .container img {
+    width: 10%;
+    height: auto;
+}
+
   .navbar {
     display: none;
   }
