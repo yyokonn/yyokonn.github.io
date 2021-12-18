@@ -46,9 +46,9 @@
                 Hi, my name is Yoko.
             </h1>
             <h2 class="mt-0">
-                I'm a 1st-year MS student at Stanford University, studying Data Science and Computational and Mathematical Engineering.
-                I'm excited about bringing impact to our society via data-driven decision-making, using machine learning and statistical data analysis. 
-                I'm also passionate about AI ethics, a topic I worked on for my undergraduate research projects. <br><br>               
+                I'm a 1st-year M.S. student at <span style="color:darkred">Stanford University</span>, studying Data Science and Computational and Mathematical Engineering.
+                I'm excited about bringing impact to our society with data-driven decision-making, using machine learning and statistical data analysis. 
+                I'm also passionate about AI ethics, which was my undergraduate research topic. <br><br>               
                 In May 2020, I graduated from the University of Michigan, Ann Arbor, with B.S. in Data Science and B.M.A. in Piano Performance. 
                 <span style="color: #007bff;">Go Blue!</span><br>
                 I feel very fortunate to have studied with <a href="https://web.eecs.umich.edu/~jag/">Dr. H. V. Jagadish</a> for my research in computational fact-checking,
@@ -66,7 +66,7 @@
     </section>
  
     <!--Education-->
-    <section class="page-section " id="education">
+    <section class="page-section  bg-primary text-white" id="education">
         <h3 class="text-center mt-0">Education</h3>
         <hr class="divider_black my-4" />
         <div class="row justify-content-center">
@@ -77,15 +77,19 @@
                 Courses: Machine Learning, Numerical Linear Algebra, Software Development for Scientists and Engineers
                 </h2>
                 <p class="mb-4 font-weight-bold">09/17 - 05/21: University of Michigan, Ann Arbor, MI</p>
-                <h2 class="mt-0" style="font-style: italic; margin-bottom: 0rem;"> B.S. Data Science & B.M.A. Piano Performance </h2>
+                <h2 class="mt-0" style="margin-bottom: 0rem; font-style: italic;"> B.S. Data Science & B.M.A. Piano Performance</h2>
                 <h2 class="mt-0">
-                Cumulative GPA: 3.91/4.00 <br/>
-                Courses:  Database Management Systems, Applied Regression, Probability and Distribution Theory, 
-                <br> &emsp;&emsp;&emsp;&emsp; Statistical Inference, Intro to Machine Learning, Data Structure and Algorithm, 
-                <br> &emsp;&emsp;&emsp;&emsp; Programming and Data Structure, Discrete Math, Linear Algebra <br>
-                Honors and Awards: University Honors, James B. Angell Scholar, SMTD Merit Scholarship, Phi Kappa Phi member
+                    Magna Cum Laude & Summa Cum Laude | CGPA: 3.91/4.00 <br/>
+                    Courses:  Database Management Systems, Applied Regression, Probability and Distribution Theory, 
+                    <br> &emsp;&emsp;&emsp;&emsp; Statistical Inference, Intro to Machine Learning, Data Structure and Algorithm, 
+                    <br> &emsp;&emsp;&emsp;&emsp; Programming and Data Structure, Discrete Math, Linear Algebra <br>
+                    Honors and Awards: University Honors, James B. Angell Scholar, Phi Kappa Phi,
+                    <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Merit Scholarship from U-M School of Music, Theatre & Dance
                 </h2>
                 <h2 class="mb-4 font-weight-bold">09/13 - 06/17: Woodbridge High School, Irvine, CA</h2>
+                <h2 class="mt-0">
+                    Favorite Courses: AP Latin, AP Chemistry, marching band, orchestra, jazz ensemble
+                </h2>
             </div>
         </div>
     </section>
@@ -103,7 +107,7 @@
                     <p class="mb-1 text-light" style="text-align:right;">Autumn 2021</p>
                     <p>With a time-series dataset on COVID-19, I explore the effects of vaccinations against the disease on the confirmed number of cases and deaths. 
                        I conduct the analysis and create interactive visualizations the trends in cases, deaths, and vaccinations in the U.S. and aroud the world.</p>
-                    <p class="mb-1" style="margin-left:6.5rem !important;"><a href="https://github.com/yyokonn/COVID-19-Data-Analysis" target="_blank" rel="noopener noreferrer">Results & Code</a></p>
+                    <p class="mb-1" style="margin-left:6.5rem !important;"><a href="https://github.com/yyokonn/COVID-19-Data-Analysis" target="_blank" rel="noopener noreferrer">learn more</a></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
@@ -111,10 +115,10 @@
                     <h2 class="mb-2 font-weight-bold">Facial Expression Recognition</h3>
                     <img src="images/expressions.jpg" alt="Expressions" style="width:20rem; height:auto;"> 
                     <p class="mb-1 text-light" style="text-align:right;">Autumn 2021</p>
-                    <p>As we face a pandemic, it's become a norm to wear a mask while talking to someone.
-                       However, it is often difficult to understand what kind of expression the other person is making.
-                       Using ML, we aim to predict the expression of a face that is covered with a mask. </p>
-                    <p class="mb-1" style="margin-left:6.5rem !important;"><a href="https://github.com/yyokonn/CS229_Project_Summary" target="_blank" rel="noopener noreferrer">Results & Code</a></p>
+                    <p>As we face a pandemic, it's become a norm to wear a mask while having a conversation with someone.
+                       It's difficult to know what kind of expression the other person is making when more than half of their face is covered.
+                       We aim to predict the expression of a masked face using ML models including Logistic Regression, SVM, and transfer learning with CNN and ResNet18. </p>
+                    <p class="mb-1" style="margin-left:6.5rem !important;"><a href="https://github.com/yyokonn/Facial-Expression-Recognition" target="_blank" rel="noopener noreferrer">learn more</a></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
@@ -123,17 +127,34 @@
                     <img src="images/newspaper.jpg" alt="Newspaper" style="width:20rem; height:auto;"> 
                     <p class="mb-1 text-light" style="text-align:right;">Summer 2020</p>
                     <p>
-                            Given a data set, misleading conclusions can be drawn from it by cherry-picking selected samples. 
-                            One important class of conclusions is a trend derived from a data set of values over time. 
-                            Our goal is to evaluate whether the 'trends' described by the extracted samples are representative of the true situation represented in the data. 
-                            We demonstrate MithraDetective, a system to compute a support score to indicate how cherry-picked a statement is; that is, whether the reported trend is well-supported by the data. 
-                            The system can also be used to discover more supported alternatives. 
-                            MithraDetective provides an interactive visual interface for both tasks.
-                    <p class="mb-1" style="margin-left:7.5rem !important;"><a href="https://arxiv.org/abs/2010.08807" target="_blank" rel="noopener noreferrer">Paper</a></p>
+                        MithraDetective is a web app embedded with a computational fact-checking system and an innovative tool to detect fake news and prevent
+                        the spread of misinformation. It has an interactive visual interface for detecting cherry-picking in a
+                        claim and discovering an alternative claim with more data support. To demonstrate its applicability in a real-world context,
+                        MithraDetective is preloaded with datasets to check claims about recent controversial issues including 
+                        COVID-19 global warming.
+                    <p class="mb-1" style="margin-left:7.5rem !important;"><a href="https://arxiv.org/abs/2010.08807" target="_blank" rel="noopener noreferrer">read paper</a></p>
                     
                 </div>
             </div>
         </div>
+        <!-- <div class="row" style="padding-left: 13rem; padding-right: 13rem;">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+               
+                    <h2 class="mb-2 font-weight-bold">Tag Recommendation Project</h3>
+                    <img src="images/plot.png" alt="Expressions" style="width:20rem; height:auto;"> 
+                    <p class="mb-1 text-light" style="text-align:right;">Autumn 2021</p>
+                    <p>With a time-series dataset on COVID-19, I explore the effects of vaccinations against the disease on the confirmed number of cases and deaths. 
+                        I conduct the analysis and create interactive visualizations the trends in cases, deaths, and vaccinations in the U.S. and aroud the world.</p>
+                    <p class="mb-1" style="margin-left:6.5rem !important;"><a href="https://github.com/yyokonn/COVID-19-Data-Analysis" target="_blank" rel="noopener noreferrer">learn more</a></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5">
+                    <h2 class="mb-2">More projets to come...</h3>
+                </div>
+            </div>
+        </div> -->
     </section>
 
     <!-- Piano-->
@@ -146,7 +167,7 @@
                 <p class="text-white mb-4">Yoko Nagafuchi, originally from Tokyo, Japan, began her piano studies at the age of four. While living in California, she took lessons with Lorna Griffitt at the University of California, Irvine, and received coaching from Dranoff gold medalist Shinichiro Kato in Tokyo. 
                     She participated in the Young Pianists’ Beethoven Competition all four years of high school, and in 2017, performed in the winners' masterclass. 
                     She has also appeared as a soloist with the Orange County Symphony Orchestra. An active chamber musician, her trio was selected to perform at Carnegie Weill Hall in 2016. <br><br>
-                    At the University of Michigan, Ann Arbor, Yoko pursued a dual degree in Piano Performance with Logan Skelton and Data Science. 
+                    At the University of Michigan, Ann Arbor, Yoko pursued a dual-degree in Piano Performance with Logan Skelton and Data Science. 
                     During the past summers she has participated in programs at the Aspen Music Festival and School and the Bowdoin International Music Festival, studying with Anton Nel, Alan Chow, and Kate Soyeon Lee. 
                     In master classes, she has worked with Menahem Pressler, Ronald Brautigam, Hie-Yon Choi, Jura Margulis, and Zhang Zhuo.</p>
                 <hr class="divider_black my-4" style="margin-top: 3.0rem !important;" />
@@ -164,19 +185,17 @@
                 <hr class="divider_black my-4" style="margin-top: 3.0rem !important;" />
                 <p class="text-white mb-4 font-weight-bold">Awards</p>
                 <h2 class="text-white mt-0"> 
-                SMTD Undergraduate Concerto Competition: Finalist (2020) <br/> 
+                U-M School of Music, Theatre, and Dance: Undergraduate Concerto Competition: Finalist (2020) <br/> 
                 Celia Mendez Young Pianist’s Beethoven Competition: Winner (2017)<br/> 
-                MTAC South Coast Branch Sonata Competition: 1st Place Winner (2016) <br/> 
                 Music Teachers National Association, Senior Piano Category, California State Competition: Honorable Mention (2015)<br/> 
                 Southern California Junior Bach Festival Complete Works Auditions: 1st Place Winner (2015)<br/> 
                 Classics Alive Young Artists Auditions: Runner-Up Winner (2015) </h2>
-                
             </div>
         </div>
     </section>
     
     <!-- More about Me-->
-    <section class="page-section bg-dark text-white" id="profile">
+    <section class="page-section" id="profile">
         <!-- <div class="text-center">
             <h2 class="mb-4 font-weight-bold">About Me</h2>
         </div> -->
@@ -185,10 +204,9 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                     <h2 class="mt-0">
-                        I'm originally from Tokyo, Japan, and I spent about 6 years before college in Irvine, CA. 
-                        I admit, I am an indoor person - but I try to get some exercise and enjoy moderate exercising, 
-                        such as walking a long distance around Stanford to grab coffee with friends. 
-                        
+                        I'm originally from Tokyo, Japan, and I lived in Irvine, CA for 6 years before college. <br>
+                        During my freetime, I enjoy light exercising such as hiking <a href="https://www.alltrails.com/trail/us/california/stanford-dish-loop-trail?u=m"  target="_blank" rel="noopener noreferrer">the Stanford Dish Loop Trail</a> or walking a long distance around Stanford to grab coffee with friends!
+                        I also like to bake scones and make pizza for my family and friends.
                     </h2>
             </div>
         </div>

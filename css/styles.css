@@ -10025,14 +10025,14 @@ hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
   border-color: #f4623a;
-  padding-bottom: 1.0rem;
+  padding-bottom: 0.0rem;
 }
 
 hr.divider_black {
   max-width: 3.25rem;
   border-width: 0.2rem;
   border-color: #312e2e;
-  padding-bottom: 1.0rem;
+  padding-bottom: 0.0rem;
 }
 
 hr.light {
